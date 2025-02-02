@@ -18,9 +18,8 @@ contract HelloWorldTest is Test {
     }
 
     function testAbiEncoding() public {
-        // 修正1：正确声明并初始化动态数组
         uint[] memory nums = new uint[](1);
-        nums[0] = 4; // 修正2：添加赋值符号 `=` 和分号 `;`
+        nums[0] = 4; 
 
         bool flag = true;
         bytes memory encoded = hw.abiEncode(nums, flag);
@@ -28,12 +27,11 @@ contract HelloWorldTest is Test {
     }
 
     function testPackedEncoding() public {
-        // 修正3：声明数组并初始化长度为2
         uint[] memory nums = new uint[](2);
         nums[0] = 1993;
-        nums[1] = 19; // 修正4：添加分号
+        nums[1] = 19; 
 
-        bool flag = true; // 修正5：声明变量 `flag`
+        bool flag = true; 
         bytes memory packed = hw.packedEncode(nums, flag);
         emit log_bytes(packed);
     }
