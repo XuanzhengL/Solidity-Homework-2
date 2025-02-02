@@ -1,4 +1,5 @@
 Practice 1
+
 For the first question, the output for `HelloWorld(uint[], bool)` with inputs `[1993, 1994]` and `true` is:
 
 ```
@@ -14,6 +15,8 @@ For the second question, using `encodePacked` with the same inputs results in:
 ```
 
 This is a more compact representation, without the padding present in standard ABI encoding.
+
+
 The screen shot is shown below:
 ![image](https://github.com/user-attachments/assets/2bdb9bf9-9a0a-475b-8b3b-0941b19e0946)
 
